@@ -1,0 +1,37 @@
+@import '../../shared.scss';
+
+:focus {
+  outline: 0;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+:focus-visible {
+  outline: 2px solid $faq-color;
+}
+
+.wrapper {
+  background-color: $content-gray-bg;
+  padding: 0 7.5rem 1rem;
+}
+
+.panelsWrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+p {
+  color: $main-text-color;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0 3rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .wrapper {
+    padding: 0 4rem 7.5rem;
+  }
+}

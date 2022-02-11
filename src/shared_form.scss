@@ -1,0 +1,50 @@
+button {
+  background-color: $components-bg-color;
+  border-radius: 1rem;
+  border: 0.125rem solid $base-color;
+}
+
+.mainButton {
+  background-color: $base-color;
+  color: $components-white-text;
+}
+
+.formWrapper {
+  width: 70%;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 25rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    width: calc(50% - 0.75rem);
+  }
+}
+
+.stepControls {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.stepInfo {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .formWrapper {
+    width: 80%;
+    max-height: initial;
+  
+    & > div {
+      width: 100%;
+    }
+  }
+}

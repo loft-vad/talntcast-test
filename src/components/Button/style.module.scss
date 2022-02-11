@@ -1,0 +1,19 @@
+@import '../../shared.scss';
+
+.button {
+  background-color: $components-bg-color;
+  border-radius: 2rem;
+  border: 0.125rem solid $base-color;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 2.5rem;
+  color: $base-color;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &.mainButton:not(:hover) {
+    background-color: $base-color;
+    color: $components-white-text;
+    transition: all 0.2s;
+  }
+}

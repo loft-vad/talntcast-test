@@ -1,0 +1,30 @@
+@import '../../shared.scss';
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: $components-bg-color;
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.6rem 2.5rem;
+  color: $black-text-color;
+  cursor: pointer;
+
+  em, i {
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: $tick-bg;
+    color: $components-white-text;
+  }
+}
+
+.mainButton {
+  background-color: $base-color;
+  color: $components-white-text;
+}

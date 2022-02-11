@@ -1,0 +1,18 @@
+@import '../../shared.scss';
+
+label {
+  font-size: 0.8rem;
+}
+
+input {
+  border: 0.0625rem solid $input-border-color;
+  padding: 0.9rem 1.2rem;
+  border-radius: 0.3125rem;
+
+}
+
+.validation-error {
+  input {
+    border-color: red;
+  }
+}
